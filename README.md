@@ -20,7 +20,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Specifications
 
-[] Value of pizza size is collected from user's choice of three size options
+[X] Value of pizza size is collected from user's choice of three size options
 
   * Input: User selects 'small' size 
   * Output: size = 'small'

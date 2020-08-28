@@ -39,13 +39,13 @@ $(document).ready(function() {
     event.preventDefault();
     
     let size = $("input:radio[name=size]:checked").val();
+    let sauce = $("input:radio[name=sauce]:checked").val();
     console.log(size);
     let protein = "pepperoni";
     // $("input:checkbox[name=toppings]:checked").each(function() {
 
     // })
     let toppings = ["1", "2"];
-    let sauce = "white";
 
     let pizza = new Pizza(size, sauce, protein, toppings);
     console.log(pizza);
