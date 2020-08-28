@@ -79,5 +79,4 @@ $(document).ready(function() {
     $("#confirmation").text(parlour.pizzas[0].confirmationNumber);
   });
 
-
 });
