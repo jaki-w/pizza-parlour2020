@@ -1,4 +1,4 @@
-function Pizza(size, sauce, protein, toppings, cost) {
+function Pizza(size, sauce, protein, toppings) {
   this.size = size;
   this.sauce = sauce;
   this.protein = protein;
@@ -22,10 +22,13 @@ Pizza.prototype.finalCost = function() {
     this.cost += 2;
   }
   console.log(this.cost);
-  if (this.toppings) {
-    toppings.forEach(function(topping) {
+  if (this.toppings.length == 1) {
+    this.cost += 0;
+  } else {
+    let chosenToppings = this.toppings;
+    for(let i = 1; i < this.toppings.length; i ++) {
       this.cost += 1;
-    })
+    }
   }
   console.log(this.cost);
   return this.cost;
@@ -36,13 +39,15 @@ $(document).ready(function() {
     event.preventDefault();
     
     let size = "medium";
-    let protein = "none";
+    let protein = "pepperoni";
     // $("input:checkbox[name=toppings]:checked").each(function() {
 
     // })
-    let toppings = ["topping", "topping"];
+    let toppings = ["1", "2"];
+    let sauce = "white";
 
-    let pizza = new Pizza(size, protein, toppings);
+    let pizza = new Pizza(size, sauce, protein, toppings);
+    console.log(pizza);
 
     let pizzaCost = pizza.finalCost();
     alert(pizzaCost);
