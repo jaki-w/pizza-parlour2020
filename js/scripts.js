@@ -72,6 +72,8 @@ $(document).ready(function() {
     console.log(pizza);
     pizza.finalCost();
     pizza.reviewOrder(toppingsList);
+    $(".row").hide();
+    $(".centered").hide();
     $(".showLater").show();
     
   });
