@@ -8,7 +8,7 @@ body {
 }
 
 #banner {
-  padding: 35px;
+  padding: 10px;
   color: #FF00FF;
 }
 h1 {
@@ -41,11 +41,12 @@ h2 {
 }
 
 .row {
-  border: solid #FF00FF;
+  border: solid #FFFF00;
   padding: 15px;
 }
 
 #receipt {
+  background-image: url("../img/pizza.png");
   text-align: center;
-  border: solid #FF00FF;
+  padding: 25px;
 }
