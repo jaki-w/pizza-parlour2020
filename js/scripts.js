@@ -33,6 +33,10 @@ Pizza.prototype.finalCost = function() {
   return this.cost;
 }
 
+Pizza.prototype.reviewOrder = function(toppingsList) {
+  $("#reviewOrder").html("Size: " + this.size +"<br>" + "Sauce: " + this.sauce + "<br>" + "Protein: " + this.protein + "<br>" + "Toppings: " + toppingsList + "<br>" + "Total: $" + this.cost);
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -40,11 +44,17 @@ $(document).ready(function() {
     let size = $("input:radio[name=size]:checked").val();
     let sauce = $("input:radio[name=sauce]:checked").val();
     let protein = $("input:radio[name=protein]:checked").val();
+    let toppingsList = [];
     let toppings = $("input:checkbox[name=toppings]:checked");
+    toppings.each(function() {
+      let toppingItem = " " + $(this).val();
+      toppingsList.push(toppingItem);
+    });
     let pizza = new Pizza(size, sauce, protein, toppings);
     console.log(pizza);
 
     let pizzaCost = pizza.finalCost();
+    pizza.reviewOrder(toppingsList);
     alert(pizzaCost);
   })
 })
