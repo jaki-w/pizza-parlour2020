@@ -18,7 +18,7 @@ _or_
 
 * _Search for user jaki-w and navigate to pizza-parlour2020 repository_
 
-* _Click the clone or download button and copy url_
+* _Click the code button and copy url_
 
 * _Open your machine's terminal and run $ cd desktop_
 
