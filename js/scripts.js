@@ -70,13 +70,15 @@ $(document).ready(function() {
 
     parlour.addPizza(pizza);
     console.log(pizza);
-    let pizzaCost = pizza.finalCost();
+    pizza.finalCost();
     pizza.reviewOrder(toppingsList);
-    alert(pizzaCost);
+    $(".showLater").show();
+    
   });
 
   $("#confirmationButton").click(function() {
     $("#confirmation").text(parlour.pizzas[0].confirmationNumber);
+    $("#showLater2").show();
   });
 
 });
