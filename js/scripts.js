@@ -40,8 +40,7 @@ $(document).ready(function() {
     
     let size = $("input:radio[name=size]:checked").val();
     let sauce = $("input:radio[name=sauce]:checked").val();
-    console.log(size);
-    let protein = "pepperoni";
+    let protein = $("input:radio[name=protein]:checked").val();
     // $("input:checkbox[name=toppings]:checked").each(function() {
 
     // })

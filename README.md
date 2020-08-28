@@ -25,12 +25,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   * Input: User selects 'small' size 
   * Output: size = 'small'
 
-[] Value of pizza sauce is collected from user's choice of two sauce options
+[X] Value of pizza sauce is collected from user's choice of two sauce options
 
   * Input: User selects 'white' sauce
   * Output: sauce = 'white'
 
-[] Value of pizza protein topping is collected from user's choice of protein options
+[] Value of pizza protein topping is collected from user's choice of four protein options
 
   * Input: User selects 'pepperoni'
   * Output: protein = 'pepperoni'
