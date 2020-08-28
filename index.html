@@ -9,86 +9,105 @@
 </head>
 <body>
   <div class="container">
-    <h1>Pizza Parlour</h1>
+    <h1>Black Hole Pizza</h1>
+    <h2>Let it consume you</h2>
 
-    <form>
-      <h3>Customize your pizza</h3><br>
+    
+    <h3>Customize your pizza</h3><br>
+    <p>Base pizza price: $10<p>
+    <div class="row">
 
-      <p>Base pizza price: $10<p>
-      <p>Select a size:</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="size" value="small" checked>
-          Small (inlcuded in base price)
-        </label>
+      <div class="col-md-3">
+        <form>
+          <p>Select a size:</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small" checked>
+              Small (inlcuded in base price)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="medium">
+              Medium (+$2)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="large">
+              Large (+$4)
+            </label>
+          </div>
+        </form>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="size" value="medium">
-          Medium (+$2)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="size" value="large">
-          Large (+$4)
-        </label>
-      </div>
-
-      <p>Select a sauce:</p>
-      <p>Sauce options are included in base price!</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sauce" value="white" checked>
-          White
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sauce" value="marinara">
-          Marinara
-        </label>
-      </div>
-
-      <p>Select a protein:</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="protein" value="none" checked>
-          None (+$0)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="protein" value="tofu">
-          Buffalo Tofu (+$2)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="protein" value="pepperoni">
-          Pepperoni (+$2)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="protein" value="sausage">
-          Sausage (+$2)
-        </label>
+    
+      <div class="col-md-3">
+        <form>
+          <p>Select a sauce:</p>
+          <p>Sauce options are included in base price!</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="white" checked>
+              White
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="marinara">
+              Marinara
+            </label>
+          </div>
+        </form>
       </div>
 
-      <p>Select your veggie toppings:</p>
-      <p>One veggie topping is included in base price!</p>
-      <p>Add additional toppings for just $1 each</p>
-      <div class="form-group">
-        <input type="checkbox" name="toppings" value="olives">Olives<br>
-        <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
-        <input type="checkbox" name="toppings" value="pineapples">Pineapples<br>
-        <input type="checkbox" name="toppings" value="bell-peppers">Bell Peppers<br>
-        <input type="checkbox" name="toppings" value="mushrooms">mushrooms<br>
+      <div class="col-md-3">
+        <form>
+          <p>Select a protein:</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="none" checked>
+              None (+$0)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="tofu">
+              Buffalo Tofu (+$2)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="pepperoni">
+              Pepperoni (+$2)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="sausage">
+              Sausage (+$2)
+            </label>
+          </div>
+        </form>
       </div>
 
-      <button type="submit">Review my order</button>
-    </form>
+      <div class="col-md-3">
+        <form>
+          <p>Select your veggie toppings:</p>
+          <p>One veggie topping is included in base price!</p>
+          <p>Add additional toppings for just $1 each</p>
+          <div class="form-group">
+            <input type="checkbox" name="toppings" value="olives">Olives<br>
+            <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
+            <input type="checkbox" name="toppings" value="pineapples">Pineapples<br>
+            <input type="checkbox" name="toppings" value="bell-peppers">Bell Peppers<br>
+            <input type="checkbox" name="toppings" value="mushrooms">mushrooms<br>
+          </div>
+        </form>
+      </div>
+
+      <button id="reviewButton">Review my order</button>
+    </div>
+
     <div class="showLater">
       <p id="reviewOrder"></p>
       <button id="confirmationButton">Submit Order</button>
