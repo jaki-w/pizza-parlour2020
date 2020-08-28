@@ -45,7 +45,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
   * Output: cost = $14
 
-[] An overview of user's pizza choice selections and total pizza cost is shown on submit of 'Review my order' button
+[X] An overview of user's pizza choice selections and total pizza cost is shown on submit of 'Review my order' button
 
   * Input: User clicks 'Review my order' button
   * Output: size: small, sauce: white, protein: pepperoni, toppings: olives, jalapenos, total: $14

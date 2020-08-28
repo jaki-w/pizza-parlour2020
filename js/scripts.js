@@ -47,8 +47,8 @@ $(document).ready(function() {
     let toppingsList = [];
     let toppings = $("input:checkbox[name=toppings]:checked");
     toppings.each(function() {
-      let toppingItem = " " + $(this).val();
-      toppingsList.push(toppingItem);
+      let toppingItem = $(this) .val();
+      toppingsList.push(" " + toppingItem);
     });
     let pizza = new Pizza(size, sauce, protein, toppings);
     console.log(pizza);
