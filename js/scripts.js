@@ -1,3 +1,18 @@
+function Parlour() {
+this.pizzas = [];
+this.confirmationNumber = 0001;
+}
+
+Parlour.prototype.updateConfirmationNumber = function() {
+  this.confirmationNumber += 1;
+  return this.confirmationNumber;
+}
+
+Parlour.prototype.addPizza = function(pizza) {
+  pizza.confirmationNumber = this.updateConfirmationNumber();
+  this.pizzas.push(pizza);
+}
+
 function Pizza(size, sauce, protein, toppings) {
   this.size = size;
   this.sauce = sauce;
@@ -38,6 +53,7 @@ Pizza.prototype.reviewOrder = function(toppingsList) {
 }
 
 $(document).ready(function() {
+  const parlour = new Parlour();
   $("form").submit(function(event) {
     event.preventDefault();
     
@@ -51,10 +67,11 @@ $(document).ready(function() {
       toppingsList.push(" " + toppingItem);
     });
     let pizza = new Pizza(size, sauce, protein, toppings);
-    console.log(pizza);
 
+    parlour.addPizza(pizza);
+    console.log(pizza);
     let pizzaCost = pizza.finalCost();
     pizza.reviewOrder(toppingsList);
     alert(pizzaCost);
-  })
+  });
 })
