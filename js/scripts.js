@@ -38,7 +38,8 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     
-    let size = "medium";
+    let size = $("input:radio[name=size]:checked").val();
+    console.log(size);
     let protein = "pepperoni";
     // $("input:checkbox[name=toppings]:checked").each(function() {
 
