@@ -22,7 +22,6 @@ function Pizza(size, sauce, protein, toppings) {
 }
 
 Pizza.prototype.finalCost = function() {
-  console.log(this.cost);
   if (this.size == "small") {
     this.cost += 0;
   } else if (this.size == "medium") {
@@ -30,21 +29,18 @@ Pizza.prototype.finalCost = function() {
   } else {
     this.cost += 4;
   }
-  console.log(this.cost);
   if (this.protein == "none") {
     this.cost += 0;
   } else {
     this.cost += 2;
   }
-  console.log(this.cost);
   if (this.toppings.length == 1) {
     this.cost += 0;
   } else {
     for(let i = 1; i < this.toppings.length; i ++) {
       this.cost += 1;
-    }
+    };
   }
-  console.log(this.cost);
   return this.cost;
 }
 
@@ -69,13 +65,11 @@ $(document).ready(function() {
     let pizza = new Pizza(size, sauce, protein, toppings);
 
     parlour.addPizza(pizza);
-    console.log(pizza);
     pizza.finalCost();
     pizza.reviewOrder(toppingsList);
     $(".row").hide();
     $(".centered").hide();
     $(".showLater").show();
-    
   });
 
   $("#confirmationButton").click(function() {
