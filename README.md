@@ -50,7 +50,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   * Input: User clicks 'Review my order' button
   * Output: size: small, sauce: white, protein: pepperoni, toppings: olives, jalapenos, total: $14
 
-[] A confimation receipt is shown on click of 'Submit order' button
+[X] A confimation receipt is shown on click of 'Submit order' button
 
   * Input: User clicks 'Submit order' button
   * Output: "Your order is confirmed."
