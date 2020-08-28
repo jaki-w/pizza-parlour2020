@@ -1,22 +1,33 @@
 # _Pizza Parlour_
 
-#### _{Brief description of application}, 08/28/2020_
+#### _This is a mock pizza parlour webpage, 08/28/2020_
 
 #### By _**Jaki Widby**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a mock pizza parlour webpage. User's can choose from different pizza options including: size, sauce, protein, and veggie toppings. User options are collected and displayed upon clicking the review my order button. A confirmation receipt is displayed upon click of the submit order button._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _To view page in browser without cloning the repository, open web browser of choice and navigate to https://jaki-w.github.io/pizza-parlour2020/_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+_or_
+
+* _Open web browser and navigate to Github website_
+
+* _Search for user jaki-w and navigate to pizza-parlour2020 repository_
+
+* _Click the clone or download button and copy url_
+
+* _Open your machine's terminal and run $ cd desktop_
+
+* _Run $ git clone_
+
+* _Navigate to your machine's desktop and open pizza-parlour2020 folder_
+
+* _Drag the index.html file into the browser to view page._
+
 
 ## Specifications
 
@@ -54,9 +65,6 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
   * Input: User clicks 'Submit order' button
   * Output: "Your order is confirmed."
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 
