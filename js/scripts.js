@@ -1,6 +1,6 @@
 function Parlour() {
 this.pizzas = [];
-this.confirmationNumber = 0001;
+this.confirmationNumber = 313;
 }
 
 Parlour.prototype.updateConfirmationNumber = function() {
@@ -74,4 +74,10 @@ $(document).ready(function() {
     pizza.reviewOrder(toppingsList);
     alert(pizzaCost);
   });
-})
+
+  $("#confirmationButton").click(function() {
+    $("#confirmation").text(parlour.pizzas[0].confirmationNumber);
+  });
+
+
+});
