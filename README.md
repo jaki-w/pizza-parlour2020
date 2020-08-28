@@ -40,7 +40,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   * Input: User selects 'olives' and 'jalapenos'
   * Output: veggies = ['olives', 'jalapenos']
 
-[] Total pizza cost is updated based on user choices
+[X] Total pizza cost is updated based on user choices
   * Input: User selects size: 'small', sauce: 'white', protein: 'pepperoni', and veggies: 'olives', 'jalapenos'
 
   * Output: cost = $14
