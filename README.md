@@ -30,12 +30,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
   * Input: User selects 'white' sauce
   * Output: sauce = 'white'
 
-[] Value of pizza protein topping is collected from user's choice of four protein options
+[X] Value of pizza protein topping is collected from user's choice of four protein options
 
   * Input: User selects 'pepperoni'
   * Output: protein = 'pepperoni'
 
-[] Value(s) of pizza vegetable topping(s) is collected from user's choice of 5 vegetable toppings
+[X] Value(s) of pizza vegetable topping(s) is collected from user's choice of 5 vegetable toppings
 
   * Input: User selects 'olives' and 'jalapenos'
   * Output: veggies = ['olives', 'jalapenos']
