@@ -25,7 +25,6 @@ Pizza.prototype.finalCost = function() {
   if (this.toppings.length == 1) {
     this.cost += 0;
   } else {
-    let chosenToppings = this.toppings;
     for(let i = 1; i < this.toppings.length; i ++) {
       this.cost += 1;
     }
@@ -41,11 +40,7 @@ $(document).ready(function() {
     let size = $("input:radio[name=size]:checked").val();
     let sauce = $("input:radio[name=sauce]:checked").val();
     let protein = $("input:radio[name=protein]:checked").val();
-    // $("input:checkbox[name=toppings]:checked").each(function() {
-
-    // })
-    let toppings = ["1", "2"];
-
+    let toppings = $("input:checkbox[name=toppings]:checked");
     let pizza = new Pizza(size, sauce, protein, toppings);
     console.log(pizza);
 
