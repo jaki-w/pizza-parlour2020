@@ -54,7 +54,7 @@ Pizza.prototype.reviewOrder = function(toppingsList) {
 
 $(document).ready(function() {
   const parlour = new Parlour();
-  $("form").submit(function(event) {
+  $("#reviewButton").click(function(event) {
     event.preventDefault();
     
     let size = $("input:radio[name=size]:checked").val();
