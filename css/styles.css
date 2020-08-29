@@ -2,7 +2,7 @@ body {
   background-image: url("../img/background.jpg");
   background-repeat: none;
   background-size: cover;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: monospace;
   color: whitesmoke;
   font-weight: bold;
 }
@@ -14,7 +14,8 @@ body {
 h1 {
   margin-top: 60px;
   text-align: center;
-  font-size: 80px;
+  font-size: 90px;
+  font-weight: bolder;
 }
 
 h2 {
@@ -23,6 +24,13 @@ h2 {
   font-size: 40px;
   color: whitesmoke;
 }
+h3 {
+color: #FFFF00;
+}
+
+p {
+  font-size: 18px;
+}
 
 .showLater {
   display: none;
@@ -30,6 +38,8 @@ h2 {
 
 #showLater2 {
   display: none;
+  background-color: #FF00FF;
+  padding: 20px;
 }
 
 #reviewButton {
@@ -46,7 +56,20 @@ h2 {
 }
 
 #receipt {
-  background-image: url("../img/pizza.png");
   text-align: center;
   padding: 25px;
+}
+
+.pizza-background {
+  background: url("../img/pizza.png");
+  border: solid #FFFF00;
+  padding: 35px;
+}
+
+button {
+  background-color: #00FFFF;
+}
+
+.info {
+  color: #00FFFF;
 }
