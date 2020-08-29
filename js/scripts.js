@@ -74,6 +74,7 @@ $(document).ready(function() {
 
   $("#confirmationButton").click(function() {
     $("#confirmation").text(parlour.pizzas[0].confirmationNumber);
+    $("#receipt").addClass("pizza-background");
     $("#showLater2").show();
     $("#confirmationButton").hide();
   });
