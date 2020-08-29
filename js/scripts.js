@@ -79,4 +79,8 @@ $(document).ready(function() {
     $("#confirmationButton").hide();
   });
 
+  $("#newOrder").click(function() {
+    location.reload();
+  })
+
 });
